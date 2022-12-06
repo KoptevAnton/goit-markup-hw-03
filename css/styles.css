@@ -21,8 +21,6 @@ body {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
@@ -32,8 +30,10 @@ h3,
 h4,
 h5,
 h6,
-p {
-  margin-top: 0;
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -43,7 +43,6 @@ img {
 }
 
 .section {
-  max-width: 1600px;
   padding: 94px 0;
 }
 
@@ -125,8 +124,7 @@ img {
 }
 
 /*Header*/
-header {
-  width: 1600px;
+.header {
   padding: 32px 0;
   border-bottom: 1px solid #ececec;
 }
@@ -173,11 +171,17 @@ header {
 
 .hero-bgc {
 max-width: 1600px;
+margin: 0 auto;
 padding: 200px 0;
 background-color: var(--dark-bgc);
 }
 
 /* Hidden title 2-nd section */
+.benefits {
+  padding-bottom: 0;
+}
+
+
 .list-benefits {
   display: flex;
   gap: 30px;
@@ -223,13 +227,14 @@ background-color: var(--dark-bgc);
 }
 .team-list-item {
   flex-basis: calc((100% - 90px) / 4);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 4px;
 }
 
 .team-title-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 30px;
+  
 }
 
 .team-titles {
@@ -254,7 +259,6 @@ background-color: var(--dark-bgc);
 /*Footer*/
 /*  */
 .footer-bgc {
-  width: 1600px;
   padding: 60px 0;
   background-color: var(--dark-bgc);
 }
@@ -277,6 +281,7 @@ background-color: var(--dark-bgc);
 /* PORTFOLIO PAGE */
 /* button portfolio */
 .btn-portfolio {
+  padding: 6px 22px;;
   background-color: var(--light-bgc);
   color: var(--primary-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
